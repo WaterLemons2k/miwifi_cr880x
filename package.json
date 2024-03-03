@@ -1,0 +1,6 @@
+{
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.js"
+  }
+}

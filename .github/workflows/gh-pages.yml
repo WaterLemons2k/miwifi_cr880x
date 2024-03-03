@@ -1,0 +1,28 @@
+name: GitHub Pages
+
+on:
+  # Runs on pushes targeting the default branch
+  push:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Build
+        run: npm run build
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: .
+          exclude_assets: ".github,scripts,LICENSE,package.json"
+          enable_jekyll: true
+          user_name: github-actions[bot]
+          user_email: 41898282+github-actions[bot]@users.noreply.github.com
