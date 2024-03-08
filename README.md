@@ -1,8 +1,10 @@
-# [miwifi_cr880x](https://github.com/WaterLemons2k/miwifi_cr880x)
+# miwifi_cr880x
 
-MiWiFi firmware for CR880x (CR8806, CR8808 and CR8809).
+A collection of MiWiFi firmware for CR880x (CR8806, CR8808 and CR8809).
 
 ## Download
+
+To download from the official site, visit the [repository](https://github.com/WaterLemons2k/miwifi_cr880x); to download from here, visit the [GitHub Pages](https://waterlemons2k.github.io/miwifi_cr880x/).
 
 | Model  | URL                                              |
 | ------ | ------------------------------------------------ |
