@@ -6,7 +6,7 @@ const README_FILE = "README.md";
 const FIRMWARE_URL_PREFIX = "https://cdn.cnbj1.fds.api.mi-img.com/xiaoqiang/";
 
 // Remove all firmware URL prefixes from the README file because
-// we want all firmware to be downloadable from the current site.
+// we want all firmware to be downloadable from a local copy.
 removeAll(README_FILE, FIRMWARE_URL_PREFIX);
 
 /**
