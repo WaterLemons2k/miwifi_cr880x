@@ -2,9 +2,10 @@
 
 A collection of MiWiFi firmware for CR880x (CR8806, CR8808 and CR8809).
 
-## Download
+Visit [the README on GitHub](https://github.com/WaterLemons2k/miwifi_cr880x#download) to download from the manufacturer's website, or
+[GitHub Pages](https://waterlemons2k.github.io/miwifi_cr880x/#download) to download from a local copy.
 
-To download from the official site, visit the [repository](https://github.com/WaterLemons2k/miwifi_cr880x); to download from here, visit the [GitHub Pages](https://waterlemons2k.github.io/miwifi_cr880x/).
+## Download
 
 | Model  | URL                                              |
 | ------ | ------------------------------------------------ |
@@ -22,7 +23,8 @@ To download from the official site, visit the [repository](https://github.com/Wa
 [6.2.182]: rom/cr8809/miwifi_cr8809_firmware_6f067_6.2.182_ispver-6.0.10.bin
 [6.2.239]: rom/cr8809/miwifi_cr8809_firmware_6.2.239_ispver.bin
 
-## References
+## Acknowledgements
 
 - [CR880x (AX3000 , IPQ50xx , RA8x) 官方固件及刷机工具，宇宙最全汇总-小米无线路由器以及小米无线相关的设备-恩山无线论坛](https://www.right.com.cn/forum/thread-8292516-1-1.html)
+- [求带“漫游阈值”功能的 CR8808 固件-小米无线路由器及小米网络设备-恩山无线论坛](https://www.right.com.cn/forum/thread-8307851-1-1.html)
 - [hzyitc/openwrt-redmi-ax3000: Openwrt for Redmi AX3000 / Xiaomi CR8806 / Xiaomi CR8808 / Xiaomi CR8809](https://github.com/hzyitc/openwrt-redmi-ax3000#get-uart-access)
