@@ -1,13 +1,15 @@
 // @ts-check
 
-import { readFileSync, writeFileSync } from "fs";
+import { readFileSync, writeFileSync } from 'fs';
 
-const README_FILE = "README.md";
-const FIRMWARE_URL_PREFIX = "https://cdn.cnbj1.fds.api.mi-img.com/xiaoqiang/";
+const README_FILE = 'README.md';
 
-// Remove all firmware URL prefixes from the README file because
-// we want all firmware to be downloadable from a local copy.
-removeAll(README_FILE, FIRMWARE_URL_PREFIX);
+/** Contents that will be removed from the README file when building a GitHub Pages. */
+const EXCLUDE_FROM_PAGES = [
+  'https://cdn.cnbj1.fds.api.mi-img.com/xiaoqiang/',
+  '(original lost)',
+];
+EXCLUDE_FROM_PAGES.forEach((content) => removeAll(README_FILE, content));
 
 /**
  * Removes all occurrences of `content` from the file.
@@ -16,8 +18,9 @@ removeAll(README_FILE, FIRMWARE_URL_PREFIX);
  * @param {string} content - The content to remove.
  */
 function removeAll(file, content) {
-  const fileContent = readFileSync(file, { encoding: "utf8" });
-  const newContent = fileContent.replace(new RegExp(content, "g"), "");
+  const fileContent = readFileSync(file, { encoding: 'utf8' });
 
-  writeFileSync(file, newContent, { encoding: "utf8" });
+  // Use `split` instead of `replace` to avoid escaping.
+  const newContent = fileContent.split(content).join('');
+  writeFileSync(file, newContent, { encoding: 'utf8' });
 }
